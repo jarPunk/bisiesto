@@ -10,3 +10,6 @@ test('Año divisible por 100 pero no por 400 NO es bisiesto', () => {
 test('Año divisible por 4 pero no por 100 es bisiesto', () => {
     expect(isLeapYear(2008)).toBe(true);
 });
+test('Año no divisible por 4 NO es bisiesto', () => {
+    expect(isLeapYear(2019)).toBe(false);
+});
